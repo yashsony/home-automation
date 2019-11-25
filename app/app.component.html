@@ -1,0 +1,49 @@
+<div style ="" class="bc ">
+
+  <nav class="navbar navbar-expand-lg navbar-light b-bottom  ">
+          <a class="navbar-brand" href="#">HOME AUTOMATION</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+          
+            <form class="form-inline my-2 my-lg-0 "  method="get">
+              <a class="nav-link"  *ngIf="!loggedIn">
+                <button class="btn btn-warning Active   my-2 my-sm-0" (click) ="login($event)" type="submit">login</button>
+              </a>
+            </form>
+
+            <form class="form-inline my-2 my-lg-0" method="get">
+              <a class="nav-link"  *ngIf="!loggedIn">
+                <button class="btn btn-warning Active   my-2 my-sm-0" (click) ="signup($event)" type="submit">Signup</button>
+              </a>
+            </form>
+
+            <form class="form-inline my-2 my-lg-0" method="get">
+              <a class="nav-link"  *ngIf="loggedIn">
+                <button class="btn btn-warning Active   my-2 my-sm-0" (click) ="signout($event)" type="submit">logout</button>
+              </a>
+            </form>
+           
+          </div>
+        </nav>
+
+</div> 
+<router-outlet></router-outlet>
+
+<div class="bc b-top fluid-container b-bottom fixed-bottom ">
+  <footer class="page-footer font-small bc  ">
+  
+        
+          <div class="footer-copyright text-center py-3 ">© 2020 Copyright:
+            <a href=#> HOMEAUTOMATION.com</a>
+          </div>
+          
+        
+        </footer>
+  </div>
+
+
